@@ -1,0 +1,10 @@
+Lobby		CEN-CI3 IR2	TSW-A0	
+Gameroom	CP3 IR1		TSW-A1
+Clubroom	CP3 IR2		TSW-A2
+Kitchen		CP3 IR3		TSW-A3
+Gym 1		CP3 IR4		TSW-A4
+Gym 2		CP3 IR5		TSW-A5
+Gym 3		CP3 IR6		TSW-A6
+Aerobic		CP3 IR7		TSW-A7
+Patio 1		CP3 IR8
+Patio 2		CEN-CI3 IR1

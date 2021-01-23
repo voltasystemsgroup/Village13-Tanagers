@@ -1,0 +1,36 @@
+[Crestron_Toolbox_Address_Book]
+
+[Entries]
+This .xadr file was created using Toolbox v2.41 or later.=:slot 01
+It is not compatible with this version of Toolbox.=:slot 02
+Please open a .adr Address Book to continue.=:slot 03
+
+[AddressBookInfo]
+Schema=2.0
+Version=1.0
+DefaultEntry=
+
+[ComSpecs]
+1_USB=usb
+CP3=auto 192.168.21.100
+TSW-A0=auto 192.168.21.131
+TSW-A1=auto 192.168.21.132
+TSW-A2=auto 192.168.21.133
+TSW-A3=auto 192.168.21.134
+TSW-A4=auto 192.168.21.135
+TSW-A5=auto 192.168.21.136
+TSW-A6=auto 192.168.21.137
+TSW-A7=auto 192.168.21.138
+
+[Notes]
+1_USB=
+CP3=
+TSW-A0=
+TSW-A1=
+TSW-A2=
+TSW-A3=
+TSW-A4=
+TSW-A5=
+TSW-A6=
+TSW-A7=
+
