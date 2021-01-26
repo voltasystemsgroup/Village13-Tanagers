@@ -1,0 +1,45 @@
+//Programmer: Sean Donahue
+#default_volatile
+#enable_stack_checking
+#enable_trace
+#output_shift 0
+#category "46" "codeDistillers" //Custom
+
+digital_input powOn, powOff, _skip_;
+analog_input volLvl;
+
+string_output tx$;
+
+function sendVol (integer i) {
+    string s[3];
+    s = itoa (i);
+
+    switch (len (s)) {
+        case (1): {
+            makestring (tx$, "\x02VOL:00%s\x03", s);
+        }
+        case (2): {
+            makestring (tx$, "\x02VOL:0%s\x03", s);
+        }
+        case (3): {
+            makestring (tx$, "\x02VOL:%s\x03", s);
+        }
+    }
+}
+
+push powOn { 
+    makestring (tx$, "\x02PWD:1\x03");
+}
+
+push powOff {
+    makestring (tx$, "\x02PWD:0\x03");
+}
+
+threadsafe change volLvl {
+    sendVol(volLvl);
+}
+
+function main ()
+{
+    waitForInitializationComplete ();
+}
